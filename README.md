@@ -6,3 +6,19 @@
 * DeepWalk was used to generate a random walk over this graph. 
 * Theses random walks were embedded in low dimensional space using Word2Vec. 
 * The prediction for rating for a user-movie pair was done by finding the movie-rating node with the highest similarity to the user node.
+
+## Requirements:
+* numpy
+* scipy
+
+## Steps to Run:
+Run the following command from root folder(not inside rec2vec)
+```python
+python -m rec2vec --walk-length 2 --number-walks 2 --workers 4
+# ****arguments****
+# walk-length
+# number-walks
+# workers
+```
+
+#### Ref : https://github.com/phanein/deepwalk
